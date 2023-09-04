@@ -1,0 +1,16 @@
+.Man {
+  position: absolute;
+  bottom: 0;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+
+  &_Left {
+    left: -20%;
+  }
+
+  &_Right {
+    right: -20%;
+  }
+}
