@@ -1,16 +1,27 @@
-import React from "react";
-import "./App.scss";
-import { LeftMan } from "./assets/LeftMan";
-import { RightMan } from "./assets/RightMan";
+import './App.scss'
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+  Navigate,
+  BrowserRouter,
+} from 'react-router-dom'
+import { LeftMan } from './assets/BackroundMen/LeftMan'
+import { RightMan } from './assets/BackroundMen/RightMan'
+import { WelcomePage } from 'welcome/WelcomePage'
 
-function App() {
+export const App = () => {
+  const location = useLocation()
+
   return (
     <div className="App">
       <LeftMan />
-      <h1>Hello world!</h1>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/welcome-page" element={<WelcomePage />} />
+        <Route path="/*" element={<Navigate to="/welcome-page" />} />
+      </Routes>
       <RightMan />
     </div>
-  );
+  )
 }
-
-export default App;
