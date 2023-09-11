@@ -1,3 +1,5 @@
+@import 'styles/styles.scss';
+
 .App {
   width: 100%;
   margin: auto;
@@ -6,8 +8,10 @@
   position: relative;
   max-width: 1000px;
   justify-content: center;
-  background-image: url("../public/images/bg.png");
+  background-image: url('../public/images/bg.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
+  color: $text-color;
+  font-size: $m-font-size;
 }

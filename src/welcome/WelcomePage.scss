@@ -1,0 +1,10 @@
+@import 'styles/styles.scss';
+
+.WelcomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: $page-width-normal;
+  max-width: $page-width-max;
+}

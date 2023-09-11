@@ -1,0 +1,15 @@
+@import 'styles/styles.scss';
+
+.TodosHeader {
+  display: flex;
+  flex-direction: row;
+  font-size: $l-font-size;
+
+  &-Sort {
+    margin-right: auto;
+  }
+
+  &-Add {
+    margin-left: auto;
+  }
+}

@@ -1,10 +1,12 @@
-$primary: #A68A67;
+$primary: #a68a67;
 
 $text-color: #504336;
 
-$background-color: #C4AB8A;
-$background-color-root: #E2CDAE;
+$background-color: #fdf4e6;
+$background-color-root: #e2cdae;
+
+$component-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.25);
 
 :export {
-   primary: $primary;
+  primary: $primary;
 }
